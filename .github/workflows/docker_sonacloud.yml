@@ -30,7 +30,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v2
         with:
           projectKey: your_project_key
-          organization: your_organization
+          organization: eric_ofori
           token: ${{ secrets.SONAR_TOKEN }}
 
       # Docker Build
