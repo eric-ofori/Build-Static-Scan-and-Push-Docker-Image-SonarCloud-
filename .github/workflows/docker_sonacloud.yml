@@ -28,10 +28,13 @@ jobs:
       # SonarCloud
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          projectKey: eric-ofori_Build-Static-Scan-and-Push-Docker-Image-SonarCloud-
-          organization: eric-ofori
-          token: ${{ secrets.SONAR_TOKEN }}
+          args: >
+            -Dsonar.projectKey=eric-ofori_Build-Static-Scan-and-Push-Docker-Image-SonarCloud-
+            -Dsonar.organization=eric-ofori
+            -Dsonar.host.url=https://sonarcloud.io
 
       # Docker Build
       - name: Log in to Docker Hub
