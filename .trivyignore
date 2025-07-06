@@ -12,3 +12,4 @@ CVE-2024-8176
 
 # Ignoring known HIGH/CRITICAL CVEs temporarily for this image build
 # File: .trivyignore
+

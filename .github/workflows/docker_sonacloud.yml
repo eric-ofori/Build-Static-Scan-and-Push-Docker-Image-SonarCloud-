@@ -62,7 +62,6 @@ jobs:
           ignore-unfixed: true
           exit-code: 1
           severity: HIGH,CRITICAL
-          ignore-policy: .trivyignore
 
       - name: Push Docker image to Docker Hub
         uses: docker/build-push-action@v5
