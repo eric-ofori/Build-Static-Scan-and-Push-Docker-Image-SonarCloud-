@@ -29,8 +29,8 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
         with:
-          projectKey: your_project_key
-          organization: eric_ofori
+          projectKey: eric-ofori_Build-Static-Scan-and-Push-Docker-Image-SonarCloud-
+          organization: eric-ofori
           token: ${{ secrets.SONAR_TOKEN }}
 
       # Docker Build
